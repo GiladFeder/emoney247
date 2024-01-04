@@ -15,6 +15,27 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <style>
+      p{
+        text-align: justify !important;
+      }
+      .feature-img{
+        width: 32px !important;
+        filter: brightness(0) invert(1);
+      }
+
+      .faq-item{
+        min-height: 104px;
+      }
+
+      #seperator{
+        content: '';
+        border: 1px solid #3758f9;
+        margin-bottom: 10px;
+        margin-top: -15px;
+      }
+
+    </style>
 
 
     <!--  funky meta tags  -->
@@ -120,12 +141,36 @@
                     </a>
                   </li>
                 </ul>
+                <div class="block lg:hidden">
+                <br>
+                <div id="seperator"> </div>
+                  <ul class="blcok lg:flex 2xl:ml-20">
+                    <li class="group relative">
+                      <a
+                              href="https://emoney247-corporate.lerextech.com/#/login"
+                              target="_blank"
+                              class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Sign In
+                      </a>
+                    </li>
+                    <li class="group relative">
+                      <a
+                              href="https://emoney247-corporate.lerextech.com/#/user/create"
+                              target="_blank"
+                              class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      >
+                        Sign Up
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
             <div class="flex items-center justify-end pr-16 lg:pr-0">
               <label
                 for="themeSwitcher"
-                class="inline-flex cursor-pointer items-center"
+                class="inline-flex cursor-pointer items-center hidden lg:flex"
                 aria-label="themeSwitcher"
                 name="themeSwitcher"
               >
@@ -195,18 +240,18 @@
                   </svg>
                 </span>
               </label>
-              <div class="hidden sm:flex">
+              <div class="sm:flex">
                 <a
                   href="https://emoney247-corporate.lerextech.com/#/login"
                   target="_blank"
-                  class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
+                  class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70 hidden lg:flex roflmao"
                 >
                   Sign In
                 </a>
                 <a
                   href="https://emoney247-corporate.lerextech.com/#/user/create"
                   target="_blank"
-                  class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+                  class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark hidden lg:flex"
                 >
                   Sign Up
                 </a>
@@ -2023,7 +2068,7 @@
         </div>
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2">
-            <div class="mb-12 flex lg:mb-[70px]">
+            <div class="faq-item mb-12 flex lg:mb-[70px]">
               <div
                 class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]"
               >
@@ -2055,7 +2100,7 @@
                 </p>
               </div>
             </div>
-            <div class="mb-12 flex lg:mb-[70px]">
+            <div class="faq-item mb-12 flex lg:mb-[70px]">
               <div
                 class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]"
               >
@@ -2089,7 +2134,7 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <div class="mb-12 flex lg:mb-[70px]">
+            <div class="faq-item mb-12 flex lg:mb-[70px]">
               <div
                 class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]"
               >
@@ -2122,7 +2167,7 @@
                 </p>
               </div>
             </div>
-            <div class="mb-12 flex lg:mb-[70px]">
+            <div class="faq-item mb-12 flex lg:mb-[70px]">
               <div
                 class="mr-4 flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-xl bg-primary text-white sm:mr-6 sm:h-[60px] sm:max-w-[60px]"
               >
@@ -3054,7 +3099,7 @@
                     href="https://trialv1.my.canva.site/emoney247-privacy-policy"
                     class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Privacy policy
+                    Privacy Policy
                   </a>
                 </li>
                 <li>
