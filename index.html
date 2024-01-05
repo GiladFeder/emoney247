@@ -2986,7 +2986,7 @@
                     </h3>
                     <form action='https://forms.zohopublic.eu/emoney247850/form/ContactForm1/formperma/QvSsDH4baM0nM80IMLySK0I7aNhgJCHDnK1RQ9urptU/htmlRecords/submit'
                           name='form' method='POST'
-                          onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();'
+                          onSubmit='javascript:document.charset="UTF-8"; return validateRecaptcha() && zf_ValidateAndSubmit();'
                           accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
 
 <!--                        CRAP -->
@@ -3566,9 +3566,6 @@
 
     // $Id: $
     function zf_ValidateAndSubmit() {
-        if(!validateRecaptcha){
-            return false;
-        }
         if (zf_CheckMandatory()) {
             if (zf_ValidCheck()) {
                 if (isSalesIQIntegrationEnabled) {
