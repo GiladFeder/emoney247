@@ -119,6 +119,7 @@
     <meta property="og:title" content="eMoney247"/>
     <meta property="og:url" content="https://giladfeder.github.io/emoney247/"/>
     <meta property="og:description" content="eMoney247 digital and payment solutions">
+    <meta name="description" content="eMoney247 digital and payment solutions">
 
     <meta property="og:image" itemprop="image" content="https://giladfeder.github.io/emoney247/assets/images/meta.png">
     <meta property="og:image:type" content="image/png">
@@ -151,17 +152,18 @@
     <div class="container">
         <div class="relative -mx-4 flex items-center justify-between">
             <div class="w-60 max-w-full px-4">
-                <a href="index.html" class="navbar-logo block w-full py-5">
+                <div class="navbar-logo block w-full py-5">
                     <img
                             src="assets/images/logo/logo-white.svg"
                             alt="logo"
                             class="header-logo w-full"
                     />
-                </a>
+                </div>
             </div>
             <div class="flex w-full items-center justify-between px-4">
                 <div>
                     <button
+                            aria-label="navbar toggler"
                             id="navbarToggler"
                             class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                     >
@@ -2928,11 +2930,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h5
+                                <div
                                         class="mb-[18px] text-lg font-semibold text-dark dark:text-white"
                                 >
                                     Our Location
-                                </h5>
+                                </div>
                                 <p class="text-base text-body-color dark:text-dark-6">
                                     eMoney247 Limited
 
@@ -2959,11 +2961,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h5
+                                <div
                                         class="mb-[18px] text-lg font-semibold text-dark dark:text-white"
                                 >
                                     How Can We Help?
-                                </h5>
+                                </div>
                                 <a target="_blank" href="mailto:info@emoney247.co.uk"
                                    class="text-base text-body-color dark:text-dark-6">
                                     info@emoney247.co.uk
@@ -3003,7 +3005,7 @@
                                     </label>
                                         <div class="mb-[22px]">
                                                 <span> <input type="text" name="SingleLine" checktype="c1" value=""
-                                                              maxlength="255" fieldType=1 placeholder="Giles Featherstone" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/></span>
+                                                              maxlength="255" fieldType=1 aria-placeholder="Giles Featherstone" placeholder="Giles Featherstone" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/></span>
                                             <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">
                                                 Invalid value</p>
                                         </div>
@@ -3016,7 +3018,7 @@
                                     </label>
                                         <div class="">
                                                 <span> <input fieldType=9 type="text" maxlength="255" name="Email"
-                                                              checktype="c5" value="" placeholder="giles@featherstone.com" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/></span>
+                                                              checktype="c5" value="" aria-placeholder="giles@featherstone.com" placeholder="giles@featherstone.com" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/></span>
                                             <p id="Email_error" class="zf-errorMessage" style="display:none;">
                                                 Invalid value</p>
                                         </div>
@@ -3030,15 +3032,15 @@
                                         <div class="mb-[22px]">
                                             <div
                                                     class="zf-phwrapper zf-phNumber"
-                                            ><span> <input
-                                                            phone="020 7123 4567"
-                                                            type="text" compname="PhoneNumber"
+                                            ><span>
+                                                <input
+                                                           aria-placeholder="020 7123 4567"
+                                                           placeholder="020 7123 4567" type="text" compname="PhoneNumber"
                                                            name="PhoneNumber_countrycode" maxlength="20"
                                                            checktype="c7" value=""
                                                            phoneFormat="1" isCountryCodeEnabled=false fieldType="11"
                                                            id="international_PhoneNumber_countrycode"
-                                                           valType="number" phoneFormatType="1"
-                                                           placeholder="" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/>
+                                                           valType="number" phoneFormatType="1" class="w-full border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"/>
                                                  </span>
                                                 <div class="zf-clearBoth"></div>
                                             </div>
@@ -3056,9 +3058,9 @@
                                                 <span> <textarea
                                                         class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent text-body-color placeholder:text-body-color"
                                                         rows="1"
-                                                        placeholder="type your message here"
-                                                        name="MultiLine" checktype="c1" maxlength="65535"
-                                                                 placeholder=""></textarea> </span>
+                                                        aria-placeholder="Your message here..."
+                                                        placeholder="Your message here..."
+                                                        name="MultiLine" checktype="c1" maxlength="65535"></textarea> </span>
                                             <p id="MultiLine_error" class="zf-errorMessage" style="display:none;">
                                                 Invalid value - numbers only</p>
                                         </div>
@@ -3070,7 +3072,7 @@
                             <br>
                             <ul>
                                 <li class="zf-fmFooter">
-                                    <button class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">Submit</button>
+                                    <button id="submit" aria-label="Submit" class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">Submit</button>
                                 </li>
                             </ul>
                         </div>
