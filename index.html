@@ -3566,7 +3566,7 @@
     // $Id: $
     function zf_ValidateAndSubmit() {
         if(!validateRecaptcha){
-            return;
+            return false;
         }
         if (zf_CheckMandatory()) {
             if (zf_ValidCheck()) {
