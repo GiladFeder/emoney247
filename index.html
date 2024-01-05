@@ -3066,6 +3066,8 @@
                                     </li><!---------Multiple Line Ends Here---------->
                                 </ul>
                             </div><!---------template Container Starts Here---------->
+                            <div class="g-recaptcha" data-sitekey="6Le7EkcpAAAAAJ3n6tV_M-QEGtX5qgh6aAhZRC_I"></div>
+                            <br>
                             <ul>
                                 <li class="zf-fmFooter">
                                     <button class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark">Submit</button>
@@ -3542,12 +3544,30 @@
 
 <!-- ====== All Scripts -->
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
 
+    function validateRecaptcha() {
+        // Check if reCAPTCHA is completed
+        var response = grecaptcha.getResponse();
+
+        if (response.length === 0) {
+            // If reCAPTCHA is not completed, prevent form submission
+            alert("Please complete the reCAPTCHA.");
+            return false;
+        }
+
+        // If reCAPTCHA is completed, allow form submission
+        return true;
+    }
+
     // $Id: $
     function zf_ValidateAndSubmit() {
+        if(!validateRecaptcha){
+            return;
+        }
         if (zf_CheckMandatory()) {
             if (zf_ValidCheck()) {
                 if (isSalesIQIntegrationEnabled) {
