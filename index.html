@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="assets/css/tailwind.css"/>
     <style>
 
+        .price-box{
+            height: 260px;
+        }
+
+        .disclaimer{
+            font-size: 10px;
+            opacity: 0.5;
+        }
+        .starting-from{
+            opacity: 0.5;
+            font-size: 12px;
+        }
+
+        .one-off{
+            margin-top: -25px;
+            opacity: 0.5;
+        }
+
         .footer-text{
             font-size: 10px;
             color: white;
@@ -211,6 +229,14 @@
                                         class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                                 >
                                     Features
+                                </a>
+                            </li>
+                            <li class="group relative">
+                                <a
+                                        href="#pricing"
+                                        class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                                >
+                                    Pricing
                                 </a>
                             </li>
                             <li class="group relative">
@@ -2040,6 +2066,79 @@
 </section>
 <!-- ====== Features Section End -->
 
+<!-- ====== Pricing Section Start -->
+<section
+        id="pricing"
+        class="relative z-20 overflow-hidden bg-gray-1 py-20 dark:bg-dark-2 pb-12 pt-20 lg:pb-[90px] lg:pt-[120px]"
+>
+    <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span class="mb-2 block text-lg font-semibold text-primary">
+                Pricing
+              </span>
+                    <h2
+                            class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]"
+                    >
+                        Great Pricing
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap justify-center">
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div
+                        class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 price-box"
+                >
+              <span
+                      class="block text-xl font-medium text-dark dark:text-white"
+              >
+                Account Opening
+              </span>
+                    <span class="starting-from">Starting from</span>
+                    <h2
+                            class="mb-6 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
+                    >
+                        <span class="text-xl font-medium">£</span>
+                        <span class="-ml-1 -tracking-[2px]">499.00</span>
+                        <div class="one-off">
+                        <span
+                                class="text-base font-normal text-body-color dark:text-dark-6"
+                        >
+                  One off payment
+                </span>
+                        </div>
+                    </h2>
+
+                    <span class="disclaimer">Terms and conditions apply.</span>
+
+                </div>
+            </div><div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div
+                        class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 price-box"
+                >
+              <span
+                      class="block text-xl font-medium text-dark dark:text-white"
+              >
+                Account Charges
+              </span>
+                    <span class="starting-from">Starting from</span>
+                    <h2
+                            class="mb-6 text-4xl font-semibold text-dark dark:text-white xl:text-[42px] xl:leading-[1.21]"
+                    >
+                        <span class="-ml-1 -tracking-[2px]">0.50%</span>
+                    </h2>
+
+                    <span class="disclaimer">Terms and conditions apply.</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====== Pricing Section End -->
+
 <!-- ====== CTA Section Start -->
 <section
         class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]"
@@ -3257,6 +3356,15 @@
                                     class="dynamic-link mb-3 inline-block text-base text-gray-7 hover:text-primary"
                             >
                                 Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                    target="_blank"
+                                    href="acceptance-policy"
+                                    class="dynamic-link mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                            >
+                                Acceptance Policy
                             </a>
                         </li>
                         <li>
